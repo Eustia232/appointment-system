@@ -1,0 +1,143 @@
+h2{
+    margin: 25px;
+    text-align: center;
+}
+
+div.explain {
+    margin-left:50px ;
+}
+
+div.explain span{
+    margin-right:50px ;
+}
+
+.table-container{
+    display: inline-block;
+    width:1200px;
+    height:650px;
+    position:relative;
+    left:60px;
+    overflow:auto;
+}
+
+div.username{
+    display: inline-block;
+    position: relative;  /* 设置为绝对定位 */
+    bottom: 500px;
+    left: 60px; /* 设置距离右侧的距离 */
+    width: 300px;
+    text-align: center;
+}
+
+div.username input{
+    font-size: 25px;
+    max-width:200px;
+    border:1px solid #787878
+}
+
+
+
+div#warning{
+    color:red;
+    visibility: hidden;
+    font-size: 35px;
+}
+
+
+button.login{
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.appointment{
+    background-color: #ffffff;
+    table-layout: fixed;
+    border: 1px solid;
+    border-collapse:collapse;
+
+}
+
+th{
+    min-width: 200px;
+    height:50px;
+    border: 1px solid #000000
+}
+
+.first_line{
+    min-width: 100px;
+}
+
+td{
+    height: 90px;
+    border: 1px solid #000000;
+
+}
+
+.time_button{
+    cursor:pointer;
+    background-color: #d7d7d7;
+}
+
+.time_active{
+    background-color: #1DC779;
+}
+
+.time_active_and_booked{
+    background-color: #1db9c7;
+}
+
+.time_used_by_other{
+    background-color: #bd2126;
+}
+
+.time_booked{
+    background-color: #2158bd;
+}
+
+.time_used_and_booked{
+    background-color: #7721bd;
+}
+
+div.time{
+    font-size:30px;
+    display: inline-block;
+    position: absolute;  /* 设置为绝对定位 */
+    bottom: 300px;
+    right: 5px; /* 设置距离右侧的距离 */
+    width: 300px;
+    text-align: center;
+}
+
+div.time button{
+    font-size: 25px;
+    margin:8px;
+}
+
+div.time input{
+    font-size: 25px;
+    margin-top:8px;
+}
+
+div.time select{
+    font-size: 25px;
+}
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 600px;
+}

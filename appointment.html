@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang=“zh”>
+<head>
+    <meta charset="UTF-8">
+    <title>预约会议网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>预约系统</h2>
+
+    <div class="explain">
+        <span style="color: #1DC779">绿色：您正在预定</span>
+        <span style="color: #bd2126">红色：已被其他人预定</span>
+        <span style="color: #2158bd">蓝色：已被您候补</span>
+        <span style="color: #7721bd">紫色：已被其他人预定且候补</span>
+    </div>
+
+    <div class="table-container">
+        <table class="appointment">
+            <thead>
+            <!-- JavaScript 动态生成的行会放在这里 -->
+            </thead>
+            <tbody>
+            <!-- JavaScript 动态生成的行会放在这里 -->
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="username">
+        <input type="text" id="inputField" placeholder="输入用户名" value="十一">
+        <br>
+        <button class="login">登陆</button>
+        <br>
+        <div id="warning">请先登录!</div>
+    </div>
+
+
+    <div class="time">
+        <label>预约会议室:</label>
+        <br>
+        <input type="time" class="meeting-time" name="meeting-time" value="10:30"
+               min="02:00" max="18:00" step="1800" required>
+        <span>至</span>
+        <input type="time" class="meeting-time" name="meeting-time" value="11:30"
+               min="02:00" max="18:00" step="1800" required>
+        <br>
+        <select id="selectplace"></select>
+        <br>
+        <select id="selectfunction">
+            <option value=use>预约</option>
+            <option value="book">候补</option>
+            <option value="cancel">取消预约</option>
+            <option value="cancel_book">取消候补</option>
+        </select>
+        <br>
+        <button class="usebtn">确定</button>
+    </div>
+
+    <button id="reset">reset(仅供代码测试者和验收者使用）</button>
+
+
+    <div id="modal" class="modal-background">
+        <div class="modal-content">
+            <p id="p1"></p>
+            <button id='btn1' onclick="resolvePromise(true)"></button>
+            <button id='btn2' onclick="resolvePromise(false)"></button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="appointment.js"></script>
+
+
+</body>
+</html>
